@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import { Link } from "gatsby"
 
 export const Container = styled.section`
     display:flex;
     align-items:center;
     justify-content:space-around;
-    height:15vh;
+    height:14vh;
     width:100%;
     border-bottom:solid 2px;
-    background-color:#FDF5E6;
+    background-color:#F5F5DC;
 
 `
 
@@ -21,15 +22,28 @@ export const BoxList = styled.li`
     display:flex;
     justify-content:space-evenly;
     align-items:center;
-    width:80vw;
+    width:70vw;
+    height:10vh;
     list-style:none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:bold;
+    
+  
+    
+    li{
+        
+        font-weight:600;
+        transition: 0.5 all ease-in-out;
+        &:hover{
+        color:#FFC125;
+        border-bottom:solid 3px;
+    }
+    }
+
 `
 
-export const Link = styled.a`
+export const LinkMenu = styled(Link)`
     text-decoration:none;
     color:#1a1a1a;
+ 
     
 
 `

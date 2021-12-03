@@ -1,6 +1,7 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { Link,  graphql, useStaticQuery } from 'gatsby';
 import * as S from './styles'
+
 
 export  function Header() {
     const data = useStaticQuery(graphql`
@@ -33,21 +34,21 @@ export  function Header() {
                 </figure>
                 <nav>
                     <S.BoxList>
-                        <S.Link href="">
+                        <S.LinkMenu to="/">
                             <li>{aboutMe}</li>
-                        </S.Link>
-                        <S.Link href="">
+                        </S.LinkMenu>
+                        <S.LinkMenu to="/works">
                             <li>{work}</li>
-                        </S.Link>
-                        <S.Link href="">
+                        </S.LinkMenu>
+                        <S.LinkMenu to="">
                             <li>{formation}</li>
-                        </S.Link>
-                        <S.Link href="">
+                        </S.LinkMenu>
+                        <S.LinkMenu to="/skills">
                             <li>{knowledge}</li>
-                        </S.Link>
-                        <S.Link href="">
+                        </S.LinkMenu>
+                        <S.LinkMenu to="#Contact">
                             <li>{contact}</li>
-                        </S.Link>
+                        </S.LinkMenu>
                     </S.BoxList>
                 </nav>
             </S.Container>
