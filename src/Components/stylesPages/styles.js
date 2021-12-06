@@ -1,4 +1,4 @@
-import styled , {keyframes} from "styled-components";
+import styled  from "styled-components";
 import { createGlobalStyle } from 'styled-components';
  
 export const GlobalStyle = createGlobalStyle`
@@ -29,14 +29,6 @@ export const Container = styled.section`
     margin-top:3vh;
   
  `
-
-
- 
-   
-
-
-
-
 
 export const BoxCard = styled.figure`
   width:90vw;

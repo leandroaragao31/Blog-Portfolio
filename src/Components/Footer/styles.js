@@ -19,7 +19,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.p`
     font-weight:200;
-    font-size:1.3vw;
+    font-size:1.4vw;
 
 `
 

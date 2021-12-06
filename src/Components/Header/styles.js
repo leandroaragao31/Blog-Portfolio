@@ -6,7 +6,6 @@ export const Container = styled.section`
     align-items:center;
     justify-content:space-around;
     height:14vh;
-    width:100%;
     border-bottom:solid 2px;
     background-color:#F5F5DC;
 
@@ -29,7 +28,7 @@ export const BoxList = styled.li`
   
     
     li{
-        
+        font-size:1.5vw;
         font-weight:600;
         transition: 0.5 all ease-in-out;
         &:hover{

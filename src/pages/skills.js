@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import * as S from './styles';
+import * as S from '../Components/stylesPages/styles';
 import { Header } from '../Components/Header/header';
 import { Footer } from '../Components/Footer/footer';
-import 'aos/dist/aos.css';
+import './animation.css'
 
 export default function Skills() {
 

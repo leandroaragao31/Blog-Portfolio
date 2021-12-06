@@ -9,7 +9,7 @@ export const Container = styled.section`
     display:flex;
     justify-content:space-evenly;
     align-items:center;
-    width:100%;
+    
     height:85vh;
 
 `
@@ -32,7 +32,7 @@ export const Boxinformation = styled.div`
     p{
         margin-top:2vh;
         font-weight:200;
-        font-size:1.3vw;
+        font-size:1.4vw;
     }
 
 `
