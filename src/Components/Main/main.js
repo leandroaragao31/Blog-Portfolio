@@ -1,8 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby';
 import * as S from './styled'
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import   '../Main/animation.css'
 
 
 export function Main() {
@@ -22,7 +21,7 @@ export function Main() {
     }
 `)
 
-    Aos.init();
+    
 
     const { profileImg, paragraph, title,
         subtitle, paragraphAbout } = data.alldata.mains[0]
@@ -31,18 +30,13 @@ export function Main() {
         <>
             <S.Container >
 
-                <S.Boxinformation
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500" >
-                    <p>{paragraph}</p>
-                    <h1>{title}</h1>
-                    <p>{subtitle}</p>
-                    <p>{paragraphAbout}</p>
+                <S.Boxinformation  >
+                    <p class="bounce-in-top">{paragraph}</p>
+                    <h1 class="bounce-in-top">{title}</h1>
+                    <p class="bounce-in-top">{subtitle}</p>
+                    <p class="bounce-in-top">{paragraphAbout}</p>
                 </S.Boxinformation>
-                <figure data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1500">
+                <figure class="flip-in-ver-right">
                     <S.ProfilePhoto src={profileImg.url} alt="" />
                 </figure>
             </S.Container>

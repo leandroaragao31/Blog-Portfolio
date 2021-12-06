@@ -40,9 +40,9 @@ export  function Header() {
                         <S.LinkMenu to="/works">
                             <li>{work}</li>
                         </S.LinkMenu>
-                        <S.LinkMenu to="">
+                        {/* <S.LinkMenu to="">
                             <li>{formation}</li>
-                        </S.LinkMenu>
+                        </S.LinkMenu> */}
                         <S.LinkMenu to="/skills">
                             <li>{knowledge}</li>
                         </S.LinkMenu>

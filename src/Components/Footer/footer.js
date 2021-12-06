@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import {  graphql, useStaticQuery } from 'gatsby';
 import * as S from './styles';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import './animation.css'
 
 export function Footer() {
     const data = useStaticQuery(graphql`
@@ -30,29 +29,27 @@ export function Footer() {
     const { title, subtitle, github,
         instagram, linkedin, copyrights} = data.alldata.footers[0]
 
-        Aos.init();
+       
 
     return (
         <>
             <S.Container id="Contact">
-                <div 
-                data-aos="fade-up"
-                data-aos-duration="3000">
+                <div className="slide-in-blurred-bottom" >
                 <S.Title >{title}</S.Title>
                 <S.SubTitle>{subtitle}</S.SubTitle>
                 </div>
                 <S.BoxLinks>
-                <figure>
+                <figure className="scale-in-hor-center">
                     <a href="https://www.linkedin.com/in/leandro-aragao-522841207/" alt="" target="_blank">
                         <S.Link src={instagram.url} alt="" />
                     </a>
                 </figure>
-                <figure>
+                <figure className="scale-in-hor-center">
                     <a href="https://github.com/leandroaragao31" alt=""  target="_blank">
                         <S.Link src={github.url} alt="" />
                     </a>
                 </figure>
-                <figure>
+                <figure className="scale-in-hor-center">
                     <a href="https://api.whatsapp.com/send?phone=5521996471703" alt=""  target="_blank">
                         <S.Link src={linkedin.url} alt="" />
                     </a>

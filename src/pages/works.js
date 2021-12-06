@@ -5,8 +5,7 @@ import { Helmet } from 'react-helmet';
 import * as S from './styles';
 import { Header } from '../Components/Header/header';
 import { Footer } from '../Components/Footer/footer';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import './animation.css'
 
 export default function Works() {
 
@@ -42,7 +41,7 @@ export default function Works() {
     recipes, strytegy, taxi,
     shoppingCar } = data.alldata.works[0]
 
-  Aos.init();
+  
 
 
   // const settings = {
@@ -55,29 +54,22 @@ export default function Works() {
 
   return (
     <>
-      <Helmet>
-        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-      </Helmet>
       <Header />
       <S.GlobalStyle />
 
       <S.Container>
         <S.Title>{title}</S.Title>
         {/* <Slider style={{ width: '95%', height: '60vh', display: 'flex', alignItems:'center', }} {...settings}> */}
-        <S.BoxCard
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500">
+        <S.BoxCard >
             <a href="https://cocky-bell-2604bd.netlify.app/" alt="" target="_blank">
-            <S.Cards src={naruto.url} alt="" />
+            <img class="bounce-in-top" src={naruto.url} alt="" />
             </a>
           
-          <S.Cards src={strytegy.url} alt="" />
-          <S.Cards src={recipes.url} alt="" />
-          <S.Cards src={taxi.url} alt="" />
-          <S.Cards src={geroflix.url} alt="" />
-          <S.Cards src={shoppingCar.url} alt="" />
+          <img class="bounce-in-top"src={strytegy.url} alt="" />
+          <img class="bounce-in-top" src={recipes.url} alt="" />
+          <img class="bounce-in-top" src={taxi.url} alt="" />
+          <img class="bounce-in-top" src={geroflix.url} alt="" />
+          <img class="bounce-in-top" src={shoppingCar.url} alt="" />
         </S.BoxCard>
         {/* </Slider> */}
       </S.Container>

@@ -30,34 +30,13 @@ export const Container = styled.section`
   
  `
 
-export const Cards = styled.img`
-    width:23vw;
-    cursor: pointer;
-    transition: 0.5s all ease-in;
-    margin-left:2vw;
-    border:solid;
-    position:relative;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    
-    &:hover{
-    transform: scale(103%);
-    
-    border-radius:30px;
-    background-color: rgba(28,28,28, 0.100);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-    p{
-      color:white;
-    }
-    
-  }
+
  
    
 
 
 
-`
+
 
 export const BoxCard = styled.figure`
   width:90vw;
@@ -78,6 +57,24 @@ export const BoxCard = styled.figure`
   }
 
 
+img{
+    width:23vw;
+    cursor: pointer;
+    transition: 0.5s all ease-in;
+    margin-left:2vw;
+    border:solid;
+    position:relative;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
+    &:hover{
+    transform: scale(103%);
+    
+    border-radius:30px;
+    background-color: rgba(28,28,28, 0.100);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+    }
+}
 
 `

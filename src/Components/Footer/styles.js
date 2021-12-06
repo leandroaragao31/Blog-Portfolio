@@ -43,7 +43,7 @@ export const Link = styled.img`
 export const BoxRights = styled.div`
     background-color:#6E7B8B;
     height:3vh;
-
+    border-top: 1px solid;
 p{
     text-align:center;
     font-weight:200;
