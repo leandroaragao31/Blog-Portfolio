@@ -7,6 +7,9 @@ export const Container = styled.section`
     flex-direction:column;
     align-items:center;
     justify-content:space-evenly;
+    @media(max-width:500px){
+        height:30vh;
+    }
 
 `
 
@@ -15,11 +18,17 @@ export const Title = styled.h1`
     font-size:2.3vw;
     text-align:center;
     padding-bottom:2vh;
+    @media(max-width:500px){
+        font-size:3vw;
+    }
 `
 
 export const SubTitle = styled.p`
     font-weight:200;
     font-size:1.4vw;
+    @media(max-width:500px){
+        font-size:2.3vw;
+    }
 
 `
 
@@ -44,7 +53,7 @@ export const BoxRights = styled.div`
     background-color:#6E7B8B;
     height:3vh;
     border-top: 1px solid;
-    @media(max-width: 768px){
+    @media(max-width: 500px){
         height:5vh;
         text-align:center;
     }
@@ -54,8 +63,8 @@ p{
     font-weight:200;
     font-family:'outfit', sans-serif;
     color:#1a1a1a;
-    @media(max-width: 768px){
-       
+    @media(max-width: 500px){
+        font-size:2vw;
         margin-top:1vh;
         text-align:center;
     }

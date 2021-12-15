@@ -28,8 +28,8 @@ export const Container = styled.section`
     text-align: center;
     font-size:2.5vw;
     
-    @media (max-width: 768px){
-      
+    @media (max-width: 500px){
+      font-size:3.5vw;
     }
   
  `
@@ -41,13 +41,15 @@ export const BoxCard = styled.figure`
   justify-content:space-evenly;
   align-items:center;
   
-@media (max-width: 768px){
+@media (max-width: 500px){
   display:flex;
   flex-direction:column;
-  width:90%;
-  justify-content:center;
+  height:65vh;
+  width:80%;
+  justify-content:space-evenly;
   flex-wrap:wrap;
   align-items:center;
+ 
 }
 
   a{
@@ -74,13 +76,12 @@ img{
     transition: 0.5s all ease-in;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    &:hover{
-      border-radius:30px;
-    }
+ 
 
-    @media (max-width: 768px){
-      width:18vw;
+    @media (max-width: 500px){
+      width:30vw;
       margin-right:5vw;
+      
     }
    
 }  
@@ -102,7 +103,7 @@ export const Route = styled(Link)`
     
   }
   @media(max-width: 768px){
-     font-size:1.7vw;
+     font-size:2vw;
     }
 `
 

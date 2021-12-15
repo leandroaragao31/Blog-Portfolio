@@ -8,9 +8,15 @@ export const Container = styled.section`
     background-size:cover;
     display:flex;
     justify-content:space-evenly;
-    align-items:center;
-    
+    align-items:center;    
     height:85vh;
+    @media(max-width:500px){
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;]
+        height:65vh;
+    }
 
 `
 
@@ -26,6 +32,9 @@ export const Boxinformation = styled.div`
     h1{
         font-size:2.5vw;
         font-weight:600;
+        @media(max-width:500px){
+            font-size:3.2vw;
+        }
         
     }
 
@@ -33,6 +42,9 @@ export const Boxinformation = styled.div`
         margin-top:2vh;
         font-weight:200;
         font-size:1.4vw;
+        @media(max-width:500px){
+            font-size:2vw;
+        }
     }
 
 `
@@ -40,7 +52,7 @@ export const ProfilePhoto = styled.img`
     width:25vw;
     border:solid;
     border-radius: 10px 10px 10px 10px;
-    &:hover{
-        
+    @media(max-width:500px){
+        width:35vw;
     }
 `
