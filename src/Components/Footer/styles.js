@@ -28,6 +28,7 @@ export const SubTitle = styled.p`
     font-size:1.4vw;
     @media(max-width:500px){
         font-size:3vw;
+        font-weight:500;
     }
 
 `
@@ -53,7 +54,7 @@ export const Link = styled.img`
         box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     }
     @media(max-width:500px){
-        width:18vw;
+        width:20vw;
     }
 
 `
@@ -75,6 +76,7 @@ p{
     @media(max-width: 500px){
         font-size:3vw;
         margin-top:1vh;
+        font-weight:500;
         text-align:center;
     }
     

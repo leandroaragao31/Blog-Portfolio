@@ -85,7 +85,7 @@ img{
  
 
     @media (max-width: 500px){
-      width:28vw;
+      width:30vw;
       margin-right:5vw;
       
     }

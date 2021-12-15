@@ -62,14 +62,14 @@ export default function Skills() {
         <S.Title>My technique Skills</S.Title>
           <S.BoxCard>
             <img className="scale-in-hor-center" src={gatsby.url} alt="" />
-            <img className="scale-in-hor-center" style={{height:'14.5vh'}} src={github.url} alt="" />
-            <img  className="scale-in-hor-center" style={{height:'14.5vh'}} src={graphQl.url} alt="" />
-             <img className="scale-in-hor-center" style={{height:'15.5vh'}} src={css3.url} alt="" />
+            <img className="scale-in-hor-center"  src={github.url} alt="" />
+            <img  className="scale-in-hor-center"  src={graphQl.url} alt="" />
+             <img className="scale-in-hor-center"  src={css3.url} alt="" />
             <img className="scale-in-hor-center" src={html5.url} alt="" />
-            <img className="scale-in-hor-center"style={{height:'15.5vh'}} src={javascript.url} alt="" />
-            <img className="scale-in-hor-center"style={{height:'15.5vh'}} src={npm.url} alt="" />
+            <img className="scale-in-hor-center" src={javascript.url} alt="" />
+            <img className="scale-in-hor-center" src={npm.url} alt="" />
             <img className="scale-in-hor-center"src={react.url} alt="" />
-            <img className="scale-in-hor-center"style={{height:'15.5vh'}} src={styledComponents.url} alt="" />
+            <img className="scale-in-hor-center" src={styledComponents.url} alt="" />
           </S.BoxCard>
         </S.Container>
         <Footer />
