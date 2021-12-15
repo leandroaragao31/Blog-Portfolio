@@ -8,6 +8,9 @@ export const Container = styled.section`
     height:14vh;
     border-bottom:solid 2px;
     background-color:#F5F5DC;
+    @media(max-width:500px){
+        height:10vh;
+    }
 `
 
 export const Logo = styled.img`

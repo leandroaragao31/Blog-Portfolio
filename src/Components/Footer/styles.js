@@ -64,7 +64,7 @@ export const BoxRights = styled.div`
     height:3vh;
     border-top: 1px solid;
     @media(max-width: 500px){
-        height:5vh;
+        height:6vh;
         text-align:center;
     }
   

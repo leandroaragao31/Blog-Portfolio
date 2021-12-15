@@ -17,6 +17,7 @@ const Container = styled.section`
     flex-direction:column;
     align-items:center;
     flex-wrap:wrap;
+   
 
 
     h1{
@@ -24,6 +25,9 @@ const Container = styled.section`
         text-align: center;
         font-size:2.5vw;
         padding-bottom:5vh;
+        @media(max-width:500px){
+        font-size:3.5vw;
+    }
     }
 
     div{
@@ -45,6 +49,9 @@ const Container = styled.section`
     position:relative;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    @media(max-width:500px){
+        width:55vw;
+    }
 
     &:hover{
     transform: scale(90%);
@@ -63,6 +70,10 @@ const Paragraph = styled.p`
     font-weight:200;
     margin-top:4vh;
     text-align:justify;
+    @media(max-width:500px){
+        font-size:4vw;
+        text-align:left;
+    }
     
 `
 
@@ -71,6 +82,11 @@ const Link = styled.a`
 text-decoration:none;
 font-size:1.5vw;
 padding-bottom:6vh;
+font-weight:600;
+@media(max-width:500px){
+    font-size:4vw;
+    font-weight:bold;
+}
 
 `
 
