@@ -1,7 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { Helmet } from 'react-helmet';
-// import Slider from "react-slick";
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import * as S from '../Components/stylesPages/styles';
 import { Header } from '../Components/Header/header';
 import { Footer } from '../Components/Footer/footer';
@@ -41,37 +39,49 @@ export default function Works() {
     recipes, strytegy, taxi,
     shoppingCar } = data.alldata.works[0]
 
-  
 
 
-  // const settings = {
-  //     dots: false,
-  //     infinite: true,
-  //     slidesToShow: 3,
-  //     slidesToScroll: 3
-  // };
+
+
 
 
   return (
     <>
       <Header />
       <S.GlobalStyle />
-
+<S.Title>{title}</S.Title>
       <S.Container>
-        <S.Title>{title}</S.Title>
-        {/* <Slider style={{ width: '95%', height: '60vh', display: 'flex', alignItems:'center', }} {...settings}> */}
+        
+
         <S.BoxCard >
-            <a href="https://cocky-bell-2604bd.netlify.app/" alt="" target="_blank">
-            <img class="bounce-in-top" src={naruto.url} alt="" />
-            </a>
-          
-          <img class="bounce-in-top"src={strytegy.url} alt="" />
-          <img class="bounce-in-top" src={recipes.url} alt="" />
-          <img class="bounce-in-top" src={taxi.url} alt="" />
-          <img class="bounce-in-top" src={geroflix.url} alt="" />
-          <img class="bounce-in-top" src={shoppingCar.url} alt="" />
+
+          <S.Card>
+            <img className="slide-in-top" src={naruto.url} alt="" />
+            <S.Route  className="slide-in-top"  to="/naruto">See More</S.Route>
+          </S.Card>
+          <S.Card>
+            <img className="slide-in-top" src={strytegy.url} alt="" />
+            <S.Route className="slide-in-top"  to="/strytegy">See More</S.Route>
+          </S.Card>
+          <S.Card>
+            <img className="slide-in-top" src={recipes.url} alt="" />
+            <S.Route className="slide-in-top"  to="">See More</S.Route>
+          </S.Card>
+          <S.Card>
+            <img className="slide-in-top" src={taxi.url} alt="" />
+            <S.Route className="slide-in-top"  to="">See More</S.Route>
+          </S.Card>
+          <S.Card>
+            <img className="slide-in-top" src={geroflix.url} alt="" />
+            <S.Route className="slide-in-top"  to="">See More</S.Route>
+          </S.Card>
+          <S.Card>
+            <img className="slide-in-top" src={shoppingCar.url} alt="" />
+            <S.Route className="slide-in-top"  to="">See More</S.Route>
+          </S.Card>
+
         </S.BoxCard>
-        {/* </Slider> */}
+
       </S.Container>
       <Footer />
     </>

@@ -1,5 +1,6 @@
 import styled  from "styled-components";
 import { createGlobalStyle } from 'styled-components';
+import { Link } from 'gatsby';
  
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap');
@@ -26,47 +27,89 @@ export const Container = styled.section`
     background-color:#CDB79E;
     text-align: center;
     font-size:2.5vw;
-    margin-top:3vh;
+    
+    @media (max-width: 768px){
+      
+    }
   
  `
 
 export const BoxCard = styled.figure`
-  width:90vw;
   height:90vh;
   display:flex;
   flex-wrap:wrap;
-  justify-content:center;
+  justify-content:space-evenly;
   align-items:center;
+  
+@media (max-width: 768px){
+  display:flex;
+  flex-direction:column;
+  width:90%;
+  justify-content:center;
+  flex-wrap:wrap;
+  align-items:center;
+}
 
   a{
     text-decoration:none;
     color:#000;
-  }
+    display:flex;
+    flex-direction:column;
+  } 
+
 
   p{
     text-align:center;
+    font-size:1.4vh;
     margin-top:2vh;
+ 
   }
 
 
 img{
-    width:23vw;
+    width:22.9vw;
     cursor: pointer;
-    transition: 0.5s all ease-in;
     margin-left:2vw;
-    border:solid;
-    position:relative;
+    border: 0.2vw solid;
+    transition: 0.5s all ease-in;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-
     &:hover{
-    transform: scale(103%);
-    
-    border-radius:30px;
-    background-color: rgba(28,28,28, 0.100);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
+      border-radius:30px;
     }
-}
+
+    @media (max-width: 768px){
+      width:18vw;
+      margin-right:5vw;
+    }
+   
+}  
+
+`
+
+export const Route = styled(Link)`
+  text-align:center;
+  width:23vw;
+  padding-top:3vw;
+  margin:2vh 2vw;
+  font-size:1.3vw;
+  font-weight:600;
+  text-transform:capitalize;
+  transition: 1 all ease-in;
+  &:hover{
+    color:#483D8B;
+    font-size:1.4vw;
+    
+  }
+  @media(max-width: 768px){
+     font-size:1.7vw;
+    }
+`
+
+export const Card = styled.div`
+  width:30%;
+  
+ 
+
 
 `

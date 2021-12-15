@@ -8,7 +8,6 @@ export const Container = styled.section`
     height:14vh;
     border-bottom:solid 2px;
     background-color:#F5F5DC;
-
 `
 
 export const Logo = styled.img`
@@ -27,7 +26,7 @@ export const BoxList = styled.li`
     
   
     
-    li{
+    a{
         font-size:1.5vw;
         font-weight:600;
         transition: 0.5 all ease-in-out;
@@ -35,6 +34,12 @@ export const BoxList = styled.li`
         color:#FFC125;
         border-bottom:solid 3px;
     }
+    }
+
+    @media (max-width: 768px){
+        a{
+            font-size:1.8vw;
+        }
     }
 
 `

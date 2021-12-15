@@ -44,10 +44,21 @@ export const BoxRights = styled.div`
     background-color:#6E7B8B;
     height:3vh;
     border-top: 1px solid;
+    @media(max-width: 768px){
+        height:5vh;
+        text-align:center;
+    }
+  
 p{
     text-align:center;
     font-weight:200;
     font-family:'outfit', sans-serif;
     color:#1a1a1a;
+    @media(max-width: 768px){
+       
+        margin-top:1vh;
+        text-align:center;
+    }
+    
 }
 `
