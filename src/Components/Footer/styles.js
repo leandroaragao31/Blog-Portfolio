@@ -19,7 +19,7 @@ export const Title = styled.h1`
     text-align:center;
     padding-bottom:2vh;
     @media(max-width:500px){
-        font-size:3vw;
+        font-size:4vw;
     }
 `
 
@@ -27,7 +27,7 @@ export const SubTitle = styled.p`
     font-weight:200;
     font-size:1.4vw;
     @media(max-width:500px){
-        font-size:2.3vw;
+        font-size:3vw;
     }
 
 `
@@ -37,6 +37,12 @@ export const BoxLinks = styled.div`
     width: 50vw;
     align-items:center;
     justify-content:space-evenly;
+    @media(max-width:500px){
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        justify-content:space-evenly;
+    }
 `
 
 export const Link = styled.img`
@@ -45,6 +51,9 @@ export const Link = styled.img`
     &:hover{
         -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
         box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    @media(max-width:500px){
+        width:18vw;
     }
 
 `
@@ -64,7 +73,7 @@ p{
     font-family:'outfit', sans-serif;
     color:#1a1a1a;
     @media(max-width: 500px){
-        font-size:2vw;
+        font-size:3vw;
         margin-top:1vh;
         text-align:center;
     }

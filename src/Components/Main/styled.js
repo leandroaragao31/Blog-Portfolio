@@ -43,7 +43,8 @@ export const Boxinformation = styled.div`
         font-weight:200;
         font-size:1.4vw;
         @media(max-width:500px){
-            font-size:2vw;
+            font-size:3vw;
+            text-align:justify;
         }
     }
 

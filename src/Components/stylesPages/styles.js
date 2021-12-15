@@ -22,6 +22,11 @@ export const Container = styled.section`
     justify-content:space-evenly;
     align-items:center;
     flex-wrap:wrap;
+    @media (max-width: 500px){
+      height:80%;
+      
+    }
+
 `
  export const Title = styled.h1`
     background-color:#CDB79E;
@@ -29,7 +34,8 @@ export const Container = styled.section`
     font-size:2.5vw;
     
     @media (max-width: 500px){
-      font-size:3.5vw;
+      font-size:4vw;
+      
     }
   
  `
@@ -79,7 +85,7 @@ img{
  
 
     @media (max-width: 500px){
-      width:30vw;
+      width:28vw;
       margin-right:5vw;
       
     }
@@ -103,7 +109,7 @@ export const Route = styled(Link)`
     
   }
   @media(max-width: 768px){
-     font-size:2vw;
+     font-size:2.8vw;
     }
 `
 
