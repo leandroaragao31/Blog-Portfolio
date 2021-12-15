@@ -45,6 +45,7 @@ export const Boxinformation = styled.div`
         @media(max-width:500px){
             font-size:3vw;
             text-align:justify;
+            font-weight:500;
         }
     }
 

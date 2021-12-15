@@ -72,6 +72,7 @@ const Paragraph = styled.p`
     text-align:justify;
     @media(max-width:500px){
         font-size:4vw;
+        font-weight:500;
         text-align:left;
     }
     
